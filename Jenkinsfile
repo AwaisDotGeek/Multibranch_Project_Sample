@@ -6,7 +6,7 @@ pipeline {
                 script {
                     def remoteDirectory = ""
                     if (env.BRANCH_NAME == 'main') {
-                        remoteDirectory = '/var/www/html/main'
+                        remoteDirectory = '/var/www/html'
                     } else if (env.BRANCH_NAME == 'feature_1') {
                         remoteDirectory = '/var/www/html/feature_1'
                     } else if (env.BRANCH_NAME == 'feature_2') {
